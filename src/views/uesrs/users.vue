@@ -268,7 +268,10 @@ export default {
          //点击确认返回字符串confirm
          //点击取消返回cancle
          if(confirmResult !== 'confirm') return this.$message.info('已经取消删除')
+        const {data:res} = await this.$http.delete('users/' + id)
+        if(res.meta.status !== 200) return this.$message.error('删除失败！')
          this.$message.success("已经删除该用户")
+         this.getUserList()
     }
   },
 };
