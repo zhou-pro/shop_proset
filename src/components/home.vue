@@ -1,7 +1,8 @@
 <template>    
  <el-container class="container">    
   <el-header> 
-    <div>
+    <div class="headerStem">
+      <img src="../assets/img/ava.jpg" alt="">
       <span>
         电商后台管理系统
       </span>
@@ -130,5 +131,16 @@ export default {
   line-height: 24px;
   letter-spacing: 0.2em;
   cursor: pointer;
+}
+.el-header img{
+  height: 100%;
+  width: 60px;
+  border-radius: 50%;
+  margin-right:10px ;
+}
+
+.el-header .headerStem{
+  display: flex;
+  align-items: center;
 }
 </style>
