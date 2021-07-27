@@ -1,4 +1,4 @@
-<template>
+B<template>
   <div class="login-contaniner">
     <div class="login-box">
       <!--头部区域-->
