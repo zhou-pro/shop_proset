@@ -3,11 +3,13 @@
     <!--面包屑导航区-->
     <el-breadcrumb separator="/">
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
+      <el-breadcrumb-item><a href="/">数据统计</a></el-breadcrumb-item>
+      <el-breadcrumb-item>数据报表</el-breadcrumb-item>
     </el-breadcrumb>
 
     <!--卡片视图区-->
     <el-card>
-       <div id="main" style="width: 1125px;height:400px;"></div>
+       <div id="main" style="width: 750px;height:400px;"></div>
     </el-card>
   </div>
 </template>
@@ -16,7 +18,7 @@
 import * as echarts from 'echarts'
 import _ from 'lodash'
 export default {
-  name:'welcome',
+  name:'report',
   data() {
     return {
       //需要合并的数据
