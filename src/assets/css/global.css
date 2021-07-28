@@ -16,3 +16,12 @@ html,body,#app {
   font-size: 13px;
   text-align: center;
 }
+.el-step__title{
+  font-size: 13px !important;
+}
+.el-steps{
+  margin: 15px 0;
+}
+.ql-editor{
+  min-height: 300px;
+}

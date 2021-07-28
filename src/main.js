@@ -4,6 +4,14 @@ import router from './router'
 import "./assets/css/global.css"
 import '../src/plugins/plugins'
 import axios from 'axios'
+import './assets/tools/dateForm'
+
+//导入富文本编辑器
+import VueQuillEditor from 'vue-quill-editor'
+// require styles导入富文本编辑器样式
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
 
 import Treeable from 'vue-table-with-tree-grid'
 Vue.component('tree-table',Treeable)
@@ -16,6 +24,7 @@ axios.interceptors.request.use(config => {
 })
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
+Vue.use(VueQuillEditor)
 
 
 
