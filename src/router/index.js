@@ -11,6 +11,7 @@ const Cate = () => import("../views/goods/Cate")
 const Params = () => import("../views/goods/Params")
 const List = () => import("../views/goods/List")
 const Add = () => import("../views/goods/Add")
+const Order = () => import("../views/order/Order")
 
 Vue.use(VueRouter)
 
@@ -59,6 +60,10 @@ const routes = [
    {
     path:'/goods/add',
     component:Add,
+   },
+   {
+    path:'/orders',
+    component:Order,
    },
   ]
  },
